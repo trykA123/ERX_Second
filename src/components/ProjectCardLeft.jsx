@@ -1,16 +1,10 @@
-import React from "react";
-import img2 from "../assets/img/2.jpg";
+import img1 from "../assets/img/1.jpg";
 
-const ProjectCard = () => {
+const ProjectCardLeft = () => {
   return (
     <div className="flex space-x-12 w-full justify-between py-12">
-      <img
-        src={img2}
-        alt=""
-        className="object-cover aspect-auto h-[400px] w-1/2"
-      />
       <div className="w-1/2 flex flex-col space-y-6">
-        <h3 className="text-4xl">Project Two</h3>
+        <h3 className="text-4xl">Project One</h3>
         <h4 className="text-3xl text-green-700">Bla bla</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -25,8 +19,14 @@ const ProjectCard = () => {
           totam ratione ducimus consequatur? Deserunt, corrupti unde.
         </p>
       </div>
+
+      <img
+        src={img1}
+        alt=""
+        className="object-cover aspect-auto h-[400px] w-1/2"
+      />
     </div>
   );
 };
 
-export default ProjectCard;
+export default ProjectCardLeft;
