@@ -1,4 +1,5 @@
 import test from "../assets/img/test.jpg";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ProjectCardLeft from "../components/ProjectCardLeft";
 import ProjectCardRight from "../components/ProjectCardRight";
@@ -32,6 +33,7 @@ const Work = () => {
         <ProjectCardLeft />
         <ProjectCardRight />
       </div>
+      <Footer />
     </div>
   );
 };

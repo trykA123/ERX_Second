@@ -1,3 +1,5 @@
+import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import img2 from "../assets/img/2.jpg";
 
 const ProjectCard = () => {
@@ -23,6 +25,13 @@ const ProjectCard = () => {
           laboriosam animi blanditiis qui temporibus quasi saepe quidem corporis
           totam ratione ducimus consequatur? Deserunt, corrupti unde.
         </p>
+        <button className="group bg-yellow-700 w-48 h-16 rounded-md hover:bg-blue-500 text-white hover:text-black duration-500 flex items-center justify-evenly hover:w-72">
+          <p className="text-xl group-hover:justify-self-start">Hit me</p>
+          <FontAwesomeIcon
+            icon={faGreaterThan}
+            className="group-hover:translate-x-4 group-hover:scale-150 duration-300"
+          ></FontAwesomeIcon>
+        </button>
       </div>
     </div>
   );
