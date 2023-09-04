@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center">
-        <h3>+40 749 37 00 85</h3>
+        <h3>+123 45 67 89</h3>
         <h4>Strada Mihail Kogalniceanu</h4>
         <h4>Brasov, Romania</h4>
       </div>
