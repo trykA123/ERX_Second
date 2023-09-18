@@ -3,7 +3,7 @@ import ServicesCard from "../components/ServicesCard";
 
 const Services = () => {
   return (
-    <div id="work" className="container mx-auto h-full">
+    <div id="services" className="container mx-auto h-full">
       <div className="xl:py-36 flex flex-col space-y-16 px-4">
         <h2 className="text-8xl">Services</h2>
         <p className="text-xl">
