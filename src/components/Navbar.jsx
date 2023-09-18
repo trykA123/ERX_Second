@@ -8,7 +8,7 @@ const Navbar = () => {
       </a>
       <ul className="flex flex-row justify-between w-[420px]">
         <li className="group w-20 text-center">
-          <a href="/work">Services</a>
+          <a href="/services">Services</a>
           <div className="w-0 group-hover:w-full h-[2px] bg-yellow-300 rounded-sm duration-300"></div>
         </li>
         <li className="group w-20 text-center">
