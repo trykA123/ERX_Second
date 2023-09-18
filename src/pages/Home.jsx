@@ -1,12 +1,10 @@
 import test from "../assets/img/test.jpg";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import ProjectCardLeft from "../components/ProjectCardLeft";
 import ProjectCardRight from "../components/ProjectCardRight";
-const Work = () => {
+const Home = () => {
   return (
     <div className="xl:flex xl:flex-col container mx-auto">
-      <Navbar />
       <div className="xl:px-24 xl:py-36">
         <h2 className="text-5xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vel
@@ -38,4 +36,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Home;

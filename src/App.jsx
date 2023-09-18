@@ -1,12 +1,21 @@
-import Work from "./pages/Work"
-
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
 
 function App() {
   return (
-    <>
-      <Work />
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        {/* Make the "/home" route the main page */}
+        <Route exact path="/" element={<Home />} />
+        <Route path="/work" element={<Services />} />
+        {/* Define your other routes here */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
