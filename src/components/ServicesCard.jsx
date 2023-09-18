@@ -3,7 +3,7 @@ import test from "../assets/img/test.jpg";
 
 const ServicesCard = () => {
   return (
-    <div className="flex flex-col w-full h-full space-y-4 px-4 group relative">
+    <div className="flex flex-col w-full h-full space-y-4 px-4 group relative py-12">
       <div className="overflow-hidden w-full h-full">
         <img
           src={test}
