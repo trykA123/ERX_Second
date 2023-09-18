@@ -31,7 +31,6 @@ const Home = () => {
         <ProjectCardLeft />
         <ProjectCardRight />
       </div>
-      <Footer />
     </div>
   );
 };
