@@ -12,15 +12,15 @@ const Navbar = () => {
           <div className="w-0 group-hover:w-full h-[2px] bg-yellow-300 rounded-sm duration-300"></div>
         </li>
         <li className="group w-20 text-center">
-          <a href="#about">About</a>
+          <a href="/about">About</a>
           <div className="w-0 group-hover:w-full h-[2px] bg-yellow-300 rounded-sm duration-300"></div>
         </li>
         <li className="group w-20 text-center">
-          <a href="#projects">Projects</a>
+          <a href="/projects">Projects</a>
           <div className="w-0 group-hover:w-full h-[2px] bg-yellow-300 rounded-sm duration-300"></div>
         </li>
         <li className="group w-20 text-center">
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
           <div className="w-0 group-hover:w-full h-[2px] bg-yellow-300 rounded-sm duration-300"></div>
         </li>
       </ul>
