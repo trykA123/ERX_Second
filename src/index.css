@@ -23,7 +23,7 @@
   }
 
   h4 {
-    @apply text-gray-300 px-3 py-4 font-bold tracking-widest;
+    @apply text-gray-300 font-bold tracking-widest;
   }
   p {
     @apply text-base leading-4 font-normal text-accent-pink;

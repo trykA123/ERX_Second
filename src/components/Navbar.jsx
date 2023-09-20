@@ -2,7 +2,7 @@ import logo from "../assets/img/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="mx-auto xl:flex xl:flex-row xl:justify-around xl:w-full xl:h-24 xl:px-6 xl:py-12 xl:items-center xl:sticky xl:top-0 z-50 text-grey-accent w-screen">
+    <div className="mx-auto xl:flex xl:flex-row xl:justify-around xl:w-full xl:h-28 xl:px-6 xl:py-12 xl:items-center xl:sticky xl:top-0 z-50 text-grey-accent w-screen border-b-2 border-white bg-main-dark">
       <a href="/" className="">
         <img src={logo} alt="logo" />
       </a>
