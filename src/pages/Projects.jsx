@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
@@ -13,16 +12,16 @@ const Projects = () => {
           exercitationem.
         </p>
       </div>
-      <div className="grid grid-rows-2 gap-24 w-full">
+      <div className="grid grid-rows-2 gap-24 w-full py-24">
         <div className="flex w-full space-x-8 ">
+          <ProjectCard />
+          <ProjectCard />
           <ProjectCard />
           <ProjectCard />
         </div>
         <div className="flex w-full space-x-8 ">
           <ProjectCard />
           <ProjectCard />
-        </div>
-        <div className="flex w-full space-x-8 ">
           <ProjectCard />
           <ProjectCard />
         </div>

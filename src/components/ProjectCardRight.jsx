@@ -4,11 +4,11 @@ import img2 from "../assets/img/2.jpg";
 
 const ProjectCard = () => {
   return (
-    <div className="flex space-x-12 w-full justify-between py-12">
+    <div className="flex space-x-12 w-full justify-between py-8 px-8 rounded-2xl bg-slate-300">
       <img
         src={img2}
         alt=""
-        className="object-cover aspect-auto h-[400px] w-1/2"
+        className="object-cover aspect-auto h-[400px] w-1/2 rounded-2xl"
       />
       <div className="w-1/2 flex flex-col space-y-6">
         <h3 className="text-4xl">Project Two</h3>

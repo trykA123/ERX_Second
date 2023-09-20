@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.png";
 
 const Footer = () => {
   return (
-    <div className="w-full h-56 bg-slate-300 flex justify-between xl:px-8 mx-auto container bottom-0 mt-10">
+    <div className="w-full h-56 bg-accent-pink flex justify-around xl:px-6 mx-auto bottom-0 mt-10 ">
       <div className="flex flex-col space-y-2">
         <a href="" className="">
           <img src={logo} alt="logo" />
@@ -18,10 +18,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col justify-center">
-        <h3>+123 45 67 89</h3>
-        <h4>Strada Mihail Kogalniceanu</h4>
-        <h4>Brasov, Romania</h4>
+      <div className="flex flex-col justify-center text-black">
+        <h3 className="text-black">+123 45 67 89</h3>
+        <h4 className="text-black">Strada Mihail Kogalniceanu</h4>
+        <h4 className="text-black">Brasov, Romania</h4>
       </div>
     </div>
   );

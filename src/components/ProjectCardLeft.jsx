@@ -4,11 +4,11 @@ import img1 from "../assets/img/1.jpg";
 
 const ProjectCardLeft = () => {
   return (
-    <div className="flex space-x-12 w-full justify-between py-12">
+    <div className="flex space-x-12 w-full justify-between py-8 bg-back-accent px-8 rounded-2xl">
       <div className="w-1/2 flex flex-col space-y-6 items-start">
-        <h3 className="text-4xl">Project One</h3>
+        <h3 className="text-4xl text-yellow-header-dark">Project One</h3>
         <h4 className="text-3xl text-green-700">Bla bla</h4>
-        <p>
+        <p className="text-yellow-text-dark">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
           totam enim, nisi, perferendis eum eaque sint voluptatibus fuga
           veritatis ea esse facilis unde laboriosam sapiente. Reprehenderit amet
@@ -20,8 +20,10 @@ const ProjectCardLeft = () => {
           laboriosam animi blanditiis qui temporibus quasi saepe quidem corporis
           totam ratione ducimus consequatur? Deserunt, corrupti unde.
         </p>
-        <button className="group bg-yellow-700 w-48 h-16 rounded-md hover:bg-blue-500 text-white hover:text-black duration-500 flex items-center justify-evenly hover:w-72">
-          <p className="text-xl group-hover:justify-self-start">Hit me</p>
+        <button className="group bg-yellow-button w-48 h-16 rounded-md hover:bg-blue-500 text-white hover:text-black duration-500 flex items-center justify-evenly hover:w-72">
+          <p className="text-xl group-hover:justify-self-start text-back-accent">
+            Hit me
+          </p>
           <FontAwesomeIcon
             icon={faGreaterThan}
             className="group-hover:translate-x-4 group-hover:scale-150 duration-300"
@@ -32,7 +34,7 @@ const ProjectCardLeft = () => {
       <img
         src={img1}
         alt=""
-        className="object-cover aspect-auto h-[400px] w-1/2"
+        className="object-cover aspect-auto h-[400px] w-1/2 rounded-xl"
       />
     </div>
   );
