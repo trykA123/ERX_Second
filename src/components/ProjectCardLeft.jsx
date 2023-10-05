@@ -4,15 +4,15 @@ import img1 from "../assets/img/1.jpg";
 
 const ProjectCardLeft = () => {
   return (
-    <div className="flex space-x-12 w-full justify-between py-8 bg-back-accent px-8 rounded-2xl">
+    <div className="flex space-x-12 w-full justify-between py-8 bg-back-accent px-8 rounded-2xl shadow-lg shadow-gold-200">
       <div className="w-1/2 flex flex-col items-start space-y-10">
-        <h3 className="text-4xl text-yellow-header-dark -translate-y-4">
+        <h2 className="text-4xl text-yellow-header-dark -translate-y-4">
           Project One
-        </h3>
-        <h4 className="text-3xl text-yellow-header-dark2 -translate-y-6">
+        </h2>
+        <h3 className="text-3xl text-yellow-header-dark2 -translate-y-6">
           Brasov, Romania
-        </h4>
-        <p className="text-yellow-header-dark text-base leading-4">
+        </h3>
+        <p className="text-yellow-header-dark">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
           totam enim, nisi, perferendis eum eaque sint voluptatibus fuga
           veritatis ea esse facilis unde laboriosam sapiente. Reprehenderit amet
@@ -24,13 +24,11 @@ const ProjectCardLeft = () => {
           laboriosam animi blanditiis qui temporibus quasi saepe quidem corporis
           totam ratione ducimus consequatur? Deserunt, corrupti unde.
         </p>
-        <button className="group bg-yellow-button w-44 h-16 rounded-md hover:bg-blue-500 text-white hover:text-black duration-500 flex items-center justify-evenly hover:w-60 ">
-          <p className="text-xl group-hover:justify-self-start text-back-accent">
-            Hit me
-          </p>
+        <button className="group bg-gold-700 w-48 h-16 rounded-md hover:bg-brand-gold-2 text-gold-300 duration-500 flex items-center justify-start space-x-4 hover:w-56">
+          <p className="text-xl text-back-accent px-4">Learn More</p>
           <FontAwesomeIcon
             icon={faGreaterThan}
-            className="group-hover:translate-x-4 group-hover:scale-150 duration-300"
+            className="group-hover:translate-x-8 duration-500 text-base"
           ></FontAwesomeIcon>
         </button>
       </div>
