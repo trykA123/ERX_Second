@@ -4,7 +4,7 @@ import img2 from "../assets/img/2.jpg";
 
 const ProjectCard = () => {
   return (
-    <div className="flex space-x-12 w-full justify-between py-8 px-8 rounded-2xl bg-gold-900 shadow-lg shadow-gold-800">
+    <div className="flex space-x-12 w-full justify-between py-8 px-8 rounded-2xl bg-gold-900 shadow-md shadow-gold-700">
       <img
         src={img2}
         alt=""

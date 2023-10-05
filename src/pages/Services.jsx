@@ -13,10 +13,7 @@ const Services = () => {
           exercitationem.
         </p>
       </div>
-      <div className="xl:py-12 grid grid-cols-3 content-center">
-        <ServicesCard />
-        <ServicesCard />
-        <ServicesCard />
+      <div className="xl:py-12 grid grid-cols-2 content-center gap-8">
         <ServicesCard />
         <ServicesCard />
         <ServicesCard />

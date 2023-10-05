@@ -17,7 +17,10 @@ const Footer = () => {
         </a>
         <div className="flex items-center px-16 space-x-4">
           <a href="">
-            <FontAwesomeIcon icon={faLinkedin} className="w-8 h-8" />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="w-8 h-8 hover:animate-icon-bounce"
+            />
           </a>
           <a href="">
             <FontAwesomeIcon icon={faInstagram} className="w-8 h-8" />
@@ -26,21 +29,18 @@ const Footer = () => {
       </div>
       <div className="flex flex-col justify-center text-black space-y-2">
         <span className="flex items-center text-2xl space-x-8">
-          <a href="">
-            <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
-          </a>
+          <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
+
           <h4 className="text-black">+123 45 67 89</h4>
         </span>
         <span className="flex items-center text-2xl space-x-8">
-          <a href="">
-            <FontAwesomeIcon icon={faLocationDot} className="w-6 h-6" />
-          </a>
+          <FontAwesomeIcon icon={faLocationDot} className="w-6 h-6" />
+
           <h4 className="text-black">Mihail Kogalniceanu</h4>
         </span>
         <span className="flex items-center text-2xl space-x-8">
-          <a href="">
-            <FontAwesomeIcon icon={faGlobe} className="w-6 h-6" />
-          </a>
+          <FontAwesomeIcon icon={faGlobe} className="w-6 h-6" />
+
           <h4 className="text-black">Brasov, Romania</h4>
         </span>
       </div>

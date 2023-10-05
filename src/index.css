@@ -29,3 +29,28 @@
     @apply text-base leading-4 font-normal text-gold-800;
   }
 }
+
+@layer components {
+  .team-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .team-card:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0px;
+    transition: all 0.3s ease;
+    background-color: #ccc;
+    z-index: 3;
+  }
+  .team-card:hover:before {
+    height: 100%;
+  }
+  .team-card:hover .image-wrapper {
+    padding: 0;
+  }
+}

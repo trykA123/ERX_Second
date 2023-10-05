@@ -1,24 +1,18 @@
-import React from "react";
-import test from "../assets/img/test.jpg";
+//import test from "../assets/img/test.jpg";
 
 const ServicesCard = () => {
   return (
-    <div className="flex flex-col w-full h-full space-y-4 px-4 group relative py-12 ">
-      <div className="overflow-hidden w-full h-full space-y-4 bg-slate-200 rounded-lg">
-        <img
-          src={test}
-          alt=""
-          className="group-hover:scale-110 ease-in-out duration-300"
-        />
-        <div className="flex flex-col items-start justify-center space-y-4 p-4">
-          <h4 className="text-3xl">Table</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-            iste non aliquam necessitatibus tempore, fugit voluptate pariatur
-            iusto in culpa! Iusto animi voluptatibus illo nulla id consequatur
-            accusamus recusandae quisquam.
-          </p>
-        </div>
+    <div className="w-full h-[35dvh] bg-servicesImg bg-cover rounded-lg flex relative items-end group">
+      <div className="flex flex-col items-start justify-center space-y-4 p-4 group-hover:bg-gold-200 h-32 group-hover:h-full duration-700 rounded-lg w-full">
+        <h4 className="text-3xl text-gold-800 group-hover:-translate-y-28 duration-300">
+          Table
+        </h4>
+        <ul className="flex flex-col opacity-0 group-hover:opacity-100 duration-500 delay-700">
+          <li>asd</li>
+          <li>asd</li>
+          <li>asd</li>
+          <li>asd</li>
+        </ul>
       </div>
     </div>
   );

@@ -29,6 +29,15 @@ export default {
         "gold-800": "#2C2506",
         "gold-900": "#211C06",
       },
+      keyframes: {
+        iconBounce: {
+          "0%, 100%": { transform: "translateY(-25%)" },
+          "50%": { transform: "none" },
+        },
+      },
+      backgroundImage: {
+        servicesImg: "url('./src/assets/img/test.jpg')",
+      },
     },
   },
   plugins: [],
