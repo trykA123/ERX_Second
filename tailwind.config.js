@@ -36,7 +36,7 @@ export default {
         },
       },
       backgroundImage: {
-        servicesImg: "url('./src/assets/img/test.jpg')",
+        servicesImg: "url('./src/assets/img/2.jpg')",
       },
     },
   },

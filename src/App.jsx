@@ -1,7 +1,7 @@
-import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -15,6 +15,7 @@ function App() {
         {/* Make the "/home" route the main page */}
         <Route exact path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         {/* Define your other routes here */}

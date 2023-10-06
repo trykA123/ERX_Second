@@ -10,7 +10,7 @@ import ProjectCardLeft from "../components/ProjectCardLeft";
 import ProjectCardRight from "../components/ProjectCardRight";
 const Home = () => {
   return (
-    <div className="xl:flex xl:flex-col">
+    <div className="xl:flex xl:flex-col overflow-hidden">
       {/* <div className="xl:px-24 xl:py-36 container mx-auto">
         <h2 className="text-5xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vel
@@ -19,7 +19,7 @@ const Home = () => {
         </h2>
       </div> */}
       <Carousel
-        className="xl:py-24 w-[80%] mx-auto"
+        className="xl:py-24 w-screen mx-auto"
         infiniteLoop
         autoPlay
         showThumbs={false}
@@ -29,26 +29,26 @@ const Home = () => {
         <img
           src={test}
           alt=""
-          className=" object-cover h-[600px] w-full pointer-events-none"
+          className=" object-cover h-[800px] w-full pointer-events-none"
         />
         <img
           src={test1}
           alt=""
-          className=" object-cover h-[600px] w-full pointer-events-none"
+          className=" object-cover h-[800px] w-full pointer-events-none"
         />
         <img
           src={test2}
           alt=""
-          className=" object-cover h-[600px] w-full pointer-events-none"
+          className=" object-cover h-[800px] w-full pointer-events-none"
         />
         <img
           src={test3}
           alt=""
-          className=" object-cover h-[600px] w-full pointer-events-none"
+          className=" object-cover h-[800px] w-full pointer-events-none"
         />
       </Carousel>
 
-      <div className="xl:px-24 xl:flex xl:flex-col xl:py-24 container mx-auto space-y-12">
+      <div className="xl:px-24 xl:flex xl:flex-col xl:py-24 container mx-auto space-y-12 mt-80">
         {/* <h2 className="text-4xl">Recent Work</h2>
         <p className="xl:w-1/2">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, vel.

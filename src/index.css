@@ -8,22 +8,26 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f6f4e8;
+}
+
 @layer base {
   h1 {
-    @apply uppercase font-semibold text-gold-900
+    @apply font-semibold text-gold-900
     text-4xl;
   }
 
   h2 {
-    @apply text-gold-700 uppercase font-bold;
+    @apply text-gold-700  font-bold;
   }
 
   h3 {
-    @apply text-white pt-3 font-semibold uppercase;
+    @apply text-white pt-3 font-semibold;
   }
 
   h4 {
-    @apply text-gray-300 font-bold tracking-widest;
+    @apply text-gray-300 font-bold tracking-widest text-xl;
   }
   p {
     @apply text-base leading-4 font-normal text-gold-800;

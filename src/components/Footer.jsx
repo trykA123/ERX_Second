@@ -1,7 +1,6 @@
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCompass,
-  faGlobe,
+  faEnvelope,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +9,7 @@ import logo from "../assets/img/logo.png";
 
 const Footer = () => {
   return (
-    <div className="w-full h-48 bg-gold-200 flex justify-around xl:px-6 mx-auto bottom-0 mt-10 ">
+    <div className="w-screen h-48 bg-gold-200 flex justify-between mx-auto items-center px-80 mt-64">
       <div className="flex flex-col space-y-2">
         <a href="" className="">
           <img src={logo} alt="logo" />
@@ -27,21 +26,18 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col justify-center text-black space-y-2">
-        <span className="flex items-center text-2xl space-x-8">
+      <div className="flex flex-col text-black space-y-3 w-[420px] px-3">
+        <span className="flex items-center  space-x-8">
           <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
-
           <h4 className="text-black">+123 45 67 89</h4>
         </span>
-        <span className="flex items-center text-2xl space-x-8">
+        <span className="flex items-center  space-x-8">
           <FontAwesomeIcon icon={faLocationDot} className="w-6 h-6" />
-
-          <h4 className="text-black">Mihail Kogalniceanu</h4>
+          <h4 className="text-black">Mihail Kogalniceanu, Brasov</h4>
         </span>
-        <span className="flex items-center text-2xl space-x-8">
-          <FontAwesomeIcon icon={faGlobe} className="w-6 h-6" />
-
-          <h4 className="text-black">Brasov, Romania</h4>
+        <span className="flex items-center space-x-8">
+          <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6" />
+          <h4 className="text-black">office@office.com</h4>
         </span>
       </div>
     </div>

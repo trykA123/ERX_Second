@@ -1,10 +1,48 @@
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import img2 from "../assets/img/2.jpg";
 
 const ProjectCard = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    }, options);
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
   return (
-    <div className="flex space-x-12 w-full justify-between py-8 px-8 rounded-2xl bg-gold-900 shadow-md shadow-gold-700">
+    <motion.div
+      ref={cardRef}
+      className={`flex space-x-12 w-full justify-between py-8 bg-gold-900 px-8 rounded-2xl shadow-lg shadow-gold-700 ${
+        isVisible ? "animate-card" : ""
+      }`}
+      initial={{ opacity: 0, x: 1200 }}
+      animate={isVisible ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 1.5 }}
+    >
       <img
         src={img2}
         alt=""
@@ -35,7 +73,7 @@ const ProjectCard = () => {
           ></FontAwesomeIcon>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
