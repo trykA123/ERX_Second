@@ -15,12 +15,12 @@ const Navbar = () => {
   };
   const liItem = {
     hidden: { opacity: 0 },
-    show: { opacity: 1 },
+    show: { opacity: 1, delay: 1.2 },
   };
 
   const logoItem = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, duration: 0.5, delay: 1.2 }, // Adjust the delay as needed
+    show: { opacity: 1, duration: 0.5 }, // Adjust the delay as needed
   };
   return (
     <motion.div
