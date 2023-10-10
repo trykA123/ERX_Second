@@ -9,9 +9,9 @@ import logo from "../assets/img/logo.png";
 
 const Footer = () => {
   return (
-    <div className="w-screen h-48 bg-gold-200 flex justify-between mx-auto items-center px-80 mt-64">
-      <div className="flex flex-col space-y-2">
-        <a href="" className="">
+    <div className="w-screen h-48 bg-gold-200 flex justify-between mx-auto items-center px-10 mt-64">
+      <div className="flex flex-col space-y-2 px-24">
+        <a href="/" className="">
           <img src={logo} alt="logo" />
         </a>
         <div className="flex items-center px-16 space-x-4">

@@ -24,12 +24,12 @@ const Navbar = () => {
   };
   return (
     <motion.div
-      className="mx-auto xl:flex xl:flex-row xl:justify-between xl:w-full xl:h-32 xl:py-12 xl:items-center xl:sticky xl:top-0 z-50 text-gold-900 w-screen border-b-2 border-gold-900 border-opacity-25 bg-gold-200 xl:px-80"
+      className="xl:flex xl:flex-row xl:justify-between xl:w-full xl:h-32 xl:py-12 xl:items-center xl:sticky xl:top-0 z-50 text-gold-900 w-screen border-b-2 border-gold-900 border-opacity-25 bg-gold-200 px-10"
       variants={ulContainer}
       initial="hidden"
       animate="show"
     >
-      <motion.a href="/" className="" variants={logoItem}>
+      <motion.a href="/" className="px-24" variants={logoItem}>
         <img src={logo} alt="logo" />
       </motion.a>
       <ul className="flex flex-row justify-between w-[420px]">
