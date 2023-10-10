@@ -5,22 +5,26 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
 const Contact = () => {
+  const center = useMemo(() => ({ lat: 45.65126, lng: 25.60828 }), []);
+
   return (
     <div id="contact" className="container mx-auto h-full">
-      <div className="xl:py-36 flex flex-col space-y-64 px-4">
-        <div className="w-2/3 h-[600px] mx-auto rounded-2xl shadow-2xl flex flex-row overflow-hidden">
-          <div className="basis-11/12 flex flex-col py-24 px-24 mr-44 space-y-12">
-            <div className="flex flex-col space-y-4">
+      <div className="xl:py-20 px-4">
+        <div className="w-full h-[800px] mx-auto rounded-2xl shadow-2xl flex flex-row overflow-hidden justify-between">
+          <div className="basis-7/12 flex flex-col py-24 px-24 space-y-12 justify-between">
+            <div className="flex flex-col space-y-12">
               <h2>Contact us</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
                 dolore mollitia accusamus facilis possimus.
               </p>
             </div>
-            <form action="submit" className="flex flex-col space-y-6 w-2/3">
+            <form action="submit" className="flex flex-col space-y-24 w-2/3">
               <input
                 type="text"
                 placeholder="Name"
@@ -42,12 +46,12 @@ const Contact = () => {
           </div>
           <div className="duration-300 basis-1/12 bg-slate-300 flex flex-col items-center justify-end relative">
             <motion.div
-              className="bg-red-200 w-96 absolute top-1/4 h-1/2 rounded-l-lg shadow-md flex flex-col py-4 justify-around px-12"
+              className="w-[800px] absolute bottom-[10%] h-4/5 rounded-l-lg shadow-md flex flex-col justify-around overflow-hidden"
               initial={{ opacity: 0, x: 800 }}
-              animate={{ opacity: 1, x: -100 }}
+              animate={{ opacity: 1, x: -200 }}
               transition={{ duration: 1.5 }}
             >
-              <h2>Contact Info</h2>
+              {/* <h2>Contact Info</h2>
               <div className="flex flex-col justify-evenly space-y-6">
                 <span className="flex items-center space-x-8">
                   <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
@@ -61,7 +65,16 @@ const Contact = () => {
                   <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6" />
                   <p className="text-black">office@office.com</p>
                 </span>
-              </div>
+              </div> */}
+              <LoadScript googleMapsApiKey={import.meta.VITE_GOOGLE_APY_KEY}>
+                <GoogleMap
+                  zoom={16}
+                  center={center}
+                  mapContainerClassName="w-full h-full"
+                >
+                  <Marker position={center} />
+                </GoogleMap>{" "}
+              </LoadScript>
             </motion.div>
             <ul className="flex space-x-4 justify-self-end px-6 py-2">
               <a href="">
@@ -79,7 +92,6 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className="w-2/3 h-[600px] mx-auto bg-teal-300"></div>
       </div>
     </div>
   );
