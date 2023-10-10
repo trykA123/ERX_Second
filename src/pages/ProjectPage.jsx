@@ -1,32 +1,39 @@
-import {
-  default as img1,
-  default as img4,
-  default as img7,
-} from "../assets/img/1.jpg";
-import {
-  default as img3,
-  default as img5,
-  default as img8,
-} from "../assets/img/1.webp";
-import {
-  default as img2,
-  default as img6,
-  default as img9,
-} from "../assets/img/2.jpg";
+import React from "react";
+import { useParams } from "react-router-dom";
 import Project from "../components/Project";
 
 const ProjectPage = () => {
-  const projectId = "1";
-  const projectDescription =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...";
-  const imageGallery = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+  const { projectId } = useParams();
+
+  // Fetch project data based on the projectId
+  const projectData = {
+    1: {
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      imageGallery: [
+        /* Image URLs for project 1 */
+      ],
+    },
+    2: {
+      description: "Description for project 2",
+      imageGallery: [
+        /* Image URLs for project 2 */
+      ],
+    },
+    // Add more project data as needed
+  };
+
+  const project = projectData[projectId];
+
+  if (!project) {
+    return <div>Project not found</div>;
+  }
 
   return (
     <div className="container mx-auto h-full xl:py-36">
       <Project
         projectId={projectId}
-        projectDescription={projectDescription}
-        imageGallery={imageGallery}
+        projectDescription={project.description}
+        imageGallery={project.imageGallery}
       />
     </div>
   );

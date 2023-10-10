@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom";
 import test from "../assets/img/hero.webp";
 
 const ProjectCard = ({ projectLink, projectId }) => {
   return (
-    <div className="relative flex w-1/2 h-[400px] rounded-3xl items-end justify-center group duration-700 hover:w-full cursor-pointer">
-      {/* Use Link instead of <a> */}
+    <div className="relative flex w-3/4 h-[400px] rounded-3xl items-end justify-center group duration-700 hover:w-full cursor-pointer">
       <Link
         to={projectLink}
         className="overflow-hidden w-full h-full rounded-3xl"
